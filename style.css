@@ -1,13 +1,24 @@
+
+.nav__row {
+    display: flex;
+    justify-content: space-between;
+}
+
 .row {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1280px;
     margin: 0 auto;
 }
 
-.nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+* {
+    padding: 0; 
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    color: #243e63;
+}
+
+div {
+    unicode-bidi: isolate;
 }
 
 .nav__container {
@@ -21,3 +32,13 @@
     justify-content: space-between;
     align-items: center;
 }
+
+@font-face { 
+    text: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2JL7W0Q5n-wU.woff2) format('woff2');
+    unicode-range: U +0460 -052F, U +1C80 -1C8A, U +20B4, U +2De0 -2DFF, U + A640-A69F, U + FE2E-FE2F;
+}
+
