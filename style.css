@@ -1,7 +1,43 @@
 
+/* 
+
+LANDING
+
+*/ 
+
+
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  background: #f5f5f5;
+  padding: 20px;
+}
+
+.menu a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0%;
+  height: 2px;
+  background: #333;
+  transition: width 0.3s ease;
+}
+
+.menu a:hover::after {
+  width: 100%;
+}
+
 .nav__row {
     display: flex;
     justify-content: space-between;
+    font: Helvetica, serif;
+}
+
+.nav__logo--img {
+    width: 30px;
+    height: 20px;
 }
 
 .row {
@@ -10,35 +46,23 @@
     margin: 0 auto;
 }
 
-* {
-    padding: 0; 
-    box-sizing: border-box;
-    font-family: "Inter", sans-serif;
-    color: #243e63;
-}
-
-div {
-    unicode-bidi: isolate;
-}
-
 .nav__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.nav__links {
+.nav__link {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font: 'Cochin', serif;
 }
 
-@font-face { 
-    text: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 100;
-    font-display: swap;
-    src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2JL7W0Q5n-wU.woff2) format('woff2');
-    unicode-range: U +0460 -052F, U +1C80 -1C8A, U +20B4, U +2De0 -2DFF, U + A640-A69F, U + FE2E-FE2F;
+.nav__button {
+    background-color: #799fd5;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
 }
-
