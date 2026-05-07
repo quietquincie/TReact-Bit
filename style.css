@@ -637,10 +637,11 @@ STEPS ↓
 .steps__img--wrapper {
     display: flex;
     position: relative;
+    padding: 50px;
 }
 
 .steps__description {
-    padding: 32px 0;
+    padding: 40px 0;
     padding left: 64px;
 }
 
@@ -694,6 +695,8 @@ STEPS ↓
     margin-top: 12px;
     font-weight: 500;
     line-height: 2;
+    align-items: center;
+    justify-content: space-between;
 }
 
 
