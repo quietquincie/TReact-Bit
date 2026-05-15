@@ -5,3 +5,9 @@ function openMenu() {
 function closeMenu() {
     document.body.classList.remove("menu--open");
 }
+
+feather.replace({
+    fill: 'gray',
+    stroke: 'black',
+    'stroke-width': 2;
+})
